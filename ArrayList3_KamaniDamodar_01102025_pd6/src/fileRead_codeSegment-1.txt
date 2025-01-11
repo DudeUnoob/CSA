@@ -1,0 +1,9 @@
+// Read the ArrayList object from the file
+// You don't need to print it; omit the for loop; just checking contents of 300 ArrayList elements
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("triplets-2.cvhs"))) {
+            ArrayList<WordTriple> wordTripleObj = (ArrayList<WordTriple>) ois.readObject();
+            // ...omit the for loop printing each WordTriple...
+            // Just use wordTripleObj as needed
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }

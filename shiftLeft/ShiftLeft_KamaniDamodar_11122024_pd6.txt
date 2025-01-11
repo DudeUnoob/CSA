@@ -1,0 +1,19 @@
+
+public static int[] shiftLeft(int[] arr) {
+        
+        int[] result = new int[arr.length];
+        
+        int shiftAmount = arr.length / 2;
+        
+        int currentPosition = 0;
+        
+        for (int num : arr) {
+            if (currentPosition >= shiftAmount) {
+                result[currentPosition - shiftAmount] = num;
+            }
+            currentPosition++;
+        }
+
+        return result;
+    }
+
