@@ -16,7 +16,6 @@ public class Student {
         this.name = name;
     }
     
-
     public String toString() {
         return "Student[name=" + name + ", age=" + age + "]";
     }

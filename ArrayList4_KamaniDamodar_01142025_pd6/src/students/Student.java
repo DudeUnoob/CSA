@@ -22,10 +22,9 @@ public class Student implements Serializable {
     
     
     public String toString() {
-        return String.format("Student::            name: %s%n" +
-                           "                              age: %d%n" +
-                           "                           email: %s%n" +
-                           "                   telephone: \"%s\"%n", 
-                           name, age, email, telephone);
+        return "Student::            name: " + name + "\n" +
+               "                      age: " + age + "\n" +
+               "                    email: " + email + "\n" +
+               "                telephone: \"" + telephone + "\"\n";
     }
 } 
